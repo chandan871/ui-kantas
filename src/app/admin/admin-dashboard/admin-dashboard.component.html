@@ -1,0 +1,14 @@
+
+<div class="sidebar">
+  <a [routerLink]="['/admin/profile']" routerLinkActive="router-link-active" >Profile</a>
+  <a [routerLink]="['/admin/institution']" routerLinkActive="router-link-active" >Institutions</a>
+  <a [routerLink]="['/admin/candidates']" routerLinkActive="router-link-active" >Candidates Info</a>
+  <a [routerLink]="['/admin/approval']" routerLinkActive="router-link-active" >Approval</a>
+  <a [routerLink]="['/admin/manegment']" routerLinkActive="router-link-active" >Manegment</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+<ngx-ui-loader></ngx-ui-loader>

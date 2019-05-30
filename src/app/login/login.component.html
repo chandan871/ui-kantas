@@ -1,0 +1,30 @@
+<h4 class="text-center">Enter Login Credentials</h4>
+<br>
+<div class="login-container">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+    <mat-form-field class="login-full-width">
+      <input type="text" formControlName="Email" matInput placeholder="Email">
+      <mat-error *ngIf="loginForm.get('Email').hasError('required')">
+          Oops, provide a Email!
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="loginForm.get('Email').hasError('required')">
+    <mat-form-field class="login-full-width">
+      <input type="password" formControlName="Password" matInput placeholder="Password">
+      <mat-error *ngIf="loginForm.get('Password').hasError('required')">
+        Oops, provide a Password!
+      </mat-error>
+  </mat-form-field>
+    <br><br *ngIf="loginForm.get('Password').hasError('required')">
+  
+  <div class="login-button-row">
+    <a mat-raised-button routerLink=".">Forgot password?</a>
+  </div><br>
+  <div class="login-button-row">
+    <button type="submit" mat-raised-button color="primary" class="btn-xs">Login</button>
+    <button mat-raised-button color="warn" class="btn-xs" (click)="onNoClick()">Cancel</button>
+  </div>
+</form>
+  </div>
+  
+  

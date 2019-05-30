@@ -1,0 +1,41 @@
+
+<div class="text-center" style="border:2px;" class="jumbotron">
+    <div class="col-xs-12 col-sm-12 list-group-item" class="text-center">
+      <h4 style="margin-top:-28px">Profile <!-- <button type="button" class="pull-right btn-success btn-xs">Edit</button> --></h4>
+      <!-- <div> -->
+        
+      <!-- </div> -->
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">First Name</span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[0].UserName}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">Last Name </span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[4].LastName}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">Email </span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[6].Email}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">Contact </span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[9].Contact}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">DOB </span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[7].DOB | date: 'dd/MM/yyyy'}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">Address</span>
+        <span class="col-sm-6 col-xs-6">{{adminprofile.UserResponseBean[8].Address[0].street}}, {{adminprofile.UserResponseBean[8].Address[0].city}}</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 list-group-item" id="navtop">
+        <span class="col-sm-6 col-xs-6">Access</span>
+        <span class="col-sm-6 col-xs-6">
+            <button type="button" class="btn btn-success btn-xs" [routerLink]="['/admin/editadminprofile']" routerLinkActive="router-link-active" >Edit Profile</button>
+            <button type="button" class="btn btn-danger btn-xs" style="margin-left: 5px;" [routerLink]="['/admin/changepassword']" routerLinkActive="router-link-active" >Change Password</button>
+        </span>
+    </div>
+</div>
+

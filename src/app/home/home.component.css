@@ -1,0 +1,179 @@
+body{
+    background-color:white;
+        
+    }
+    #navtop{
+      background-color:cadetblue;
+      }
+      .pull-right,a{
+      color:#002b29;
+      font-family:times;
+      /* margin-right:1cm; */
+      
+      }
+      #logli{
+          padding-left:1cm;
+          
+      }
+      #log{
+      /* padding-left:1cm; */
+      cursor: pointer;
+      }
+      #reg{
+      padding-right:0.5cm;
+      }
+     #con{
+      padding-left:2cm;
+          padding-top: 0.3cm;
+          padding-right: 1cm;
+      }
+      #num{
+      padding-left:1cm;
+          padding-top: 0.3cm;
+      }
+    #logo{
+    height:40px;
+    width:240px;
+    color:grey;
+    position:relative;
+    padding-left:1.3cm;
+    }
+    
+    #bar{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, ##2f4f4f));
+        background:-moz-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-webkit-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-o-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-ms-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:linear-gradient(to bottom, #44c767 5%, #2f4f4f 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#2f4f4f',GradientType=0);
+        background-color:#44c767;
+        -moz-border-radius:28px;
+        
+    cursor:pointer;
+    color:#ff0000;	
+    
+    height:1.9cm;
+    font-family:times;
+      font-size:20px;
+      
+    }
+    
+    .navbar-right{
+    position:relative;
+    bottom:-0.3cm;
+    color:#ffffff;
+    }
+    
+    
+    #ddown{
+    font-family:times;
+    font-size:19px;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, ##2f4f4f));
+        background:-moz-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-webkit-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-o-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:-ms-linear-gradient(top, #44c767 5%, #2f4f4f 100%);
+        background:linear-gradient(to bottom, #44c767 5%, #2f4f4f 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#2f4f4f',GradientType=0);
+        background-color:#44c767;
+        -moz-border-radius:28px;
+        
+    cursor:pointer;
+    color:#ffffff;	
+    }
+        #img1{
+                width: 100%;
+                height: 750px;
+            
+            }
+            #img2{
+                width: 100%;
+                height: 750px;
+            }
+            #img3{
+                width: 100%;
+                height: 750px;
+            }
+        .pageOne{
+            position: relative;  
+            padding-top:-15%;
+            bottom: 0.6cm;
+        }
+        
+    .nav.navbar-nav.navbar-right li a{
+        color:black;
+        
+    }
+        
+     
+        #p4{
+            font-family:serif;
+            font-size: 1.6em;
+            padding-bottom:1.5cm;
+        color: brown;
+            
+        }
+        #head3{
+            padding-bottom: 1.3cm;
+            color: blue;
+        }
+        h2{
+            padding-bottom: 1.7cm;
+            color: black;
+        }
+         #img4,#img5,#img6{
+                width: 100%;
+                height: 600px;
+            }
+            h1{
+                padding-bottom: 0.8cm;
+                color:olive;
+                font-family:cursive;
+                font-size:-1em;
+            }
+            #p1,#p2,#p3{
+                padding-bottom: 0.6cm;
+                color:white;
+                font-size: 1em;
+                font-family:cursive;
+                
+            }
+       
+       #footer1{
+                background-color:darkslategrey;
+                color:wheat;
+                padding-bottom: 1cm;
+                padding-top: 0.5cm;
+           padding-left: 3.7cm;
+            }
+        h3{
+                    
+                    padding-bottom: 1cm;
+                }
+        
+        
+        #navbottom{
+      background-color:#152323;
+          height: 1.5cm;
+      }
+          #copyr{
+              color: white;
+              padding-top: 0.3cm;
+          }
+      
+        
+    .affix {
+          top: 0;
+          width: 100%;
+          z-index: 9999 !important;
+      }
+    
+      .affix + .container-fluid {
+          padding-top: 70px;
+      }
+    .about-tall{
+    
+        margin-left: 0px !important;
+    
+    }

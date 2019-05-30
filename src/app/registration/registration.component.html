@@ -1,0 +1,128 @@
+<br>
+
+
+    <br>
+<h4 class="text-center">Register Yourself</h4>
+<br>
+<mat-dialog-actions>
+<div class="login-container">
+    <form class="login-form" [formGroup]="regform" (ngSubmit)="registerUser(regform)">
+      <fieldset>
+        <legend><h5 class="text-center">Login Details</h5></legend>
+    <mat-form-field class="login-full-width">
+      <input type="text" formControlName="UserName" matInput placeholder="User Name">
+      <mat-error *ngIf="regform.get('UserName').hasError('required')">
+          Oops, provide a username!
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('UserName').hasError('required')">
+
+    <mat-form-field class="login-full-width">
+      <input type="password" formControlName="Password" matInput placeholder="Password">
+    </mat-form-field>
+     <mat-form-field class="login-full-width">
+      <input type="password" formControlName="ConfirmPassword" matInput placeholder="Confirm Password">
+    </mat-form-field>
+  </fieldset>
+
+<fieldset>
+  <legend><h5 class="text-center">Personal Details</h5></legend>
+  <mat-form-field class="login-full-width">
+      <input type="text" formControlName="FirstName" matInput placeholder="First Name">
+      <mat-error *ngIf="regform.get('FirstName').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('FirstName').hasError('required')">
+
+  <mat-form-field class="login-full-width">
+      <input type="text" formControlName="LastName" matInput placeholder="Last Name">
+      <mat-error *ngIf="regform.get('LastName').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('LastName').hasError('required')">
+
+  <mat-form-field class="login-full-width">
+      <input type="email" formControlName="Email" matInput placeholder="Email">
+      <mat-error *ngIf="regform.get('Email').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('LastName').hasError('required')">
+  <mat-form-field class="login-full-width">
+      <input type="tel" formControlName="Contact" matInput placeholder="Contact Number">
+      <mat-error *ngIf="regform.get('Contact').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('LastName').hasError('required')">
+  
+    <mat-form-field class="login-full-width">
+      <input matInput [matDatepicker]="picker" formControlName="DOB" placeholder="Date Of Birth">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-radio-group aria-label="Gender" formControlName="Gender">
+      <mat-radio-button value="Male">Male</mat-radio-button>
+      <mat-radio-button value="Female">Female</mat-radio-button>
+    </mat-radio-group>
+    
+    <mat-form-field class="login-full-width">
+      <mat-label [hidden]="expression">Language</mat-label>
+      <mat-select formControlName="Languages" name="language">
+        <mat-option *ngFor="let language of languages" [value]="language">
+          {{language}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+
+    <mat-form-field class="login-full-width">
+      <input type="text" formControlName="street" matInput placeholder="Line Address">
+      <mat-error *ngIf="regform.get('FirstName').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('FirstName').hasError('required')">
+
+    <mat-form-field class="login-full-width">
+      <input type="text" formControlName="city" matInput placeholder="City">
+      <mat-error *ngIf="regform.get('FirstName').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('FirstName').hasError('required')">
+
+    <mat-form-field class="login-full-width">
+      <input type="text" formControlName="country" matInput placeholder="Country">
+      <mat-error *ngIf="regform.get('FirstName').hasError('required')">
+          Enter First Name
+        </mat-error>
+    </mat-form-field>
+    <br><br *ngIf="regform.get('FirstName').hasError('required')">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</fieldset>
+  <div class="login-button-row">
+    <button type="submit" mat-raised-button color="primary" class="btn-xs">Register</button>
+    <button mat-raised-button color="warn" class="btn-xs" (click)="closeModsal()">Cancel</button>
+  </div>
+</form>
+
+  
+  </div>
+  </mat-dialog-actions>
+  
