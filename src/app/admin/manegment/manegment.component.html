@@ -1,1 +1,61 @@
-<div [froalaEditor]>Hello, Froala!</div>
+<!-- <div [froalaEditor] [(froalaModel)]="formModel">Hello, Froala!</div>
+{{formModel}} -->
+<h4 class="jumbotron text-center" style="padding:10px;">Configure Questions</h4>
+
+<form name="myform">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+    <div class="col-lg-2 col-xs-12">
+        <label>Question</label>
+    </div>
+    <div class="col-lg-1 hidden-xs">
+        <label>:</label>
+    </div>
+    <div class="col-lg-9 col-xs-12">
+    <textarea [froalaEditor]  [(froalaModel)]="formModel"></textarea>
+</div>
+</div>
+
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="top:10px">
+        <div class="col-lg-2 col-xs-12">
+                <label>Answers</label>
+            </div>
+            <div class="col-lg-1 hidden-xs">
+                    <label>:</label>
+                </div>
+
+                <div class="col-lg-9 col-xs-12">
+                        <input type="text" class="form-control" [(ngModel)]="answer" name="myanswer"><br>
+    <button type="submit" class="pull-left btn btn-primary btn-sm" (click)="addansers(answer); answer=''" [disabled] = "!answer">Add</button>
+    <button type="submit" class="pull-right btn btn-success btn-sm" (click)="addquestion(formModel)">Submit</button>
+
+                    </div>
+                
+
+</div>
+<div class="col-xs-12 col-lg-12" style="top: 10px" *ngIf="answerlist.length>0">
+    <div class="col-lg-6 col-lg-offset-3 col-xs-12">
+            <table  class="table pd-b-5" >
+  
+                    <thead>
+                      <tr>
+                      <th>S.No</th>
+                      <th>Answer</th>
+                      <th>Access</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let ans of answerlist; let i=index" (click)="removeanser(i)">
+                      <td>{{i+1}}</td>
+                      <td>{{ans}}</td>
+                      <td><a style="cursor: pointer;">Remove</a> &nbsp;<a style="cursor: pointer;" (click)="answer = ans">Edit</a> </td>
+                      </tr>
+                  </table>
+    </div>
+</div>
+    <!-- <div [froalaView]="form.formModel"></div> -->
+    
+   
+  </form>
+  
+
+  <div [froalaView]="formModel"></div>

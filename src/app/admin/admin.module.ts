@@ -12,6 +12,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AdminDashboardComponent, AdminprofileComponent, ApprovalComponent, ManegmentComponent, CandidatesinfoComponent, 
@@ -20,6 +21,7 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
     CommonModule,
     NgxUiLoaderModule,
     AdminRoutingModule,
+    FormsModule,
     FroalaEditorModule.forRoot(), FroalaViewModule.forRoot()
   ]
 })
